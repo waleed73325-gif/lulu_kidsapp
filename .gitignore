@@ -1,0 +1,117 @@
+# ==============================================================================
+# Lulu Kids (.gitignore) - Flutter Mobile App & Laravel Backend Monorepo
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. نظام التشغيل والملفات المؤقتة (OS & Temporary Files)
+# ------------------------------------------------------------------------------
+*.class
+*.log
+*.pyc
+*.swp
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ------------------------------------------------------------------------------
+# 2. برامج التطوير والمحررات (IDEs & Editors)
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.fleet/
+
+# ------------------------------------------------------------------------------
+# 3. تطبيق فلاتر ودارت (Flutter & Dart Ecosystem)
+# ------------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# وثائق ورموز التصحيح
+**/doc/api/
+**/ios/Flutter/.last_build_id
+app.*.symbols
+app.*.map.json
+
+# نواتج بناء الأندرويد والـ APK / AAB
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/.gradle/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+
+# نواتج بناء iOS و macOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/macos/Pods/
+
+# ------------------------------------------------------------------------------
+# 4. خادم وباك إند لارافيل (Laravel Backend & Admin Panel)
+# ------------------------------------------------------------------------------
+# الحزم والمكتبات الخارجية (يمكن تثبيتها عبر composer install & npm install)
+/backend/vendor/
+/backend/node_modules/
+/backend/npm-debug.log
+/backend/yarn-error.log
+
+# ملفات البيئة والكلمات السرية (ممنوع رفعها تماماً لأمان المشروع)
+/backend/.env
+/backend/.env.backup
+/backend/.env.*.php
+/backend/.env.production
+!/backend/.env.example
+
+# مفاتيح التشفير وملفات الكاش والتخزين المؤقت
+/backend/storage/*.key
+/backend/storage/framework/cache/data/*
+!/backend/storage/framework/cache/data/.gitignore
+/backend/storage/framework/sessions/*
+!/backend/storage/framework/sessions/.gitignore
+/backend/storage/framework/views/*
+!/backend/storage/framework/views/.gitignore
+/backend/storage/framework/testing/*
+!/backend/storage/framework/testing/.gitignore
+/backend/storage/logs/*.log
+!/backend/storage/logs/.gitignore
+
+# إيصالات التحويل والصور المرفوعة أثناء الاختبارات
+/backend/storage/app/public/receipts/*
+!/backend/storage/app/public/receipts/.gitignore
+/backend/storage/app/public/avatars/*
+!/backend/storage/app/public/avatars/.gitignore
+/backend/public/storage
+/backend/public/build/
+/backend/public/hot
+
+# ملفات وبيئات الاختبارات
+/backend/.phpunit.cache/
+/backend/Homestead.json
+/backend/Homestead.yaml
+/backend/auth.json
